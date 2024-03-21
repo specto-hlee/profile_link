@@ -9,7 +9,7 @@ body {
     min-width: 343px;
     max-width: 600px;
     background-image: url(Background.png);
-    background-color: rgba(43, 37, 27, 1);
+    background-color: linear-gradient(90deg, rgba(34, 31, 26, 1), rgba(42, 37, 28, 1));
 }
 
 * {
