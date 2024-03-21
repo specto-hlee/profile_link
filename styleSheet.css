@@ -9,7 +9,7 @@ body {
     min-width: 343px;
     max-width: 600px;
     background: url(Background.png);
-    background-size: cover;
+    background-size: 100% 100%;
 }
 
 * {
