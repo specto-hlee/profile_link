@@ -1,0 +1,195 @@
+body {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    margin: 0 auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    min-width: 343px;
+    max-width: 600px;
+    background-image: url(Background.png);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.profileBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    margin-top: 24px;
+    margin-bottom: 20px;
+    padding: 16px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.10);
+    border: 1px solid rgba(235, 235, 245, 0.15);
+    /*border-image: linear-gradient(160deg, rgba(255, 255, 255, 0.40) 0%, rgba(255, 255, 255, 0.00) 49.5%, rgba(255, 255, 255, 0.10) 100%);*/
+    border-image-slice: 1;
+    /* -webkit-backdrop-filter: blur(10px); */
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    gap: 12px;
+}
+
+#thumbnail {
+    display: flex; /* 중앙 정렬을 위해 flexbox 사용 */
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: center; /* 세로 중앙 정렬 */
+    width: 80px;
+    height: 80px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    border: 1px solid rgba(235, 235, 245, 0.16);
+}
+
+h2 {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.6px;
+    color: #ffffff;
+    margin: 0px;
+    padding: 0px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    background: linear-gradient(103deg, #70B7FF 0%, #0A70FF 100%);
+    border: 1px solid rgba(235, 235, 245, 0.3);
+    font-size: 15px;
+    font-weight: 590;
+    color: #ffffff;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    transition: all 0.5s;
+}
+
+.button:hover {
+    background: linear-gradient(103deg,#0A70FF 100%, #70B7FF 0%);
+}
+
+.descriptionBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 360px;
+    margin-top: 16px;
+}
+
+#fortImageBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: -10;
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+}
+
+#fortImage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 360px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+#messageBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    border-radius: 0 0 20px 20px;
+    /*background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(20px);*/
+    color: #ffffff;
+}
+
+#blurBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 16px 20px;
+    border-radius: 0 0 20px 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+h3 {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 8px;
+    color: #ffffff;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+
+}
+
+h4 {
+    margin: 0px;
+    color: rgba(235, 235, 245, 0.6);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.footerBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 16px;
+}
+
+#appStoreBadge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+h1 {
+    margin: 0px;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    color: #636366;
+}
